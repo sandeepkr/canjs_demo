@@ -1,0 +1,20 @@
+{{#if data.length}}
+{{#each data}}
+<tr>
+	  <td> {{PCL_Name}} </td>
+      <td> {{Branch}} </td>
+	  <td> {{Planner_Name}} </td>
+	  <td> {{Stakeholder_Name}} </td>
+	   <td> {{Area_Type}} </td>
+      <td> {{Technology}} </td>
+	  <td> {{3g_Site_Relocate_FROM}} </td>
+	  <td> {{3g_Purchase_Order}} </td>
+	  <td> {{Priority}} </td>
+      <td> {{Business_Unit}} </td>
+      <td> {{MOB}} </td>
+      <td> {{CAF_Category}} </td>
+</tr>
+{{/each}}
+{{else}}
+	{{emptyMessage}}
+{{/if}}
