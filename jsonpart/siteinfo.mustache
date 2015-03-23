@@ -1,0 +1,8 @@
+{{#if sitedata.length}}
+    {{#each sitedata}}
+	   <a href="#"> <img src="./img/{{site_logo}}"> </img></a>
+		<span id="site-name">{{site_name}}</span>
+    {{/each}}
+  {{else}}
+	 {{emptyMessage}}
+  {{/if}}
