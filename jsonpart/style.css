@@ -1,0 +1,285 @@
+body{
+word-wrap: break-word;
+line-height:1.5;
+font-size:1em;
+position:relative;
+}
+
+
+
+/*site image*/
+img{
+width:10.37%;
+}
+#site-main
+{
+width:auto;
+height:auto;
+margin-top:1%;
+}
+
+#site-head{
+margin-left:7%;
+}
+
+#site-name{
+  font: normal 2.8vw Arial;
+  color: #1E437A;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+  margin-left: 30%;    
+}
+
+/*For main menu*/
+
+#main-menu{
+  opacity: 0.95;
+  border-radius: 5px;
+  list-style-type: none;
+  padding-left: 7%;
+  padding-right: 7%;
+  height: 55px;
+  margin-top:4%;
+}
+
+#main-menu li{
+
+  float: left;
+  width: 16.35%;
+}
+
+#main-menu li:first-child a{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#main-menu li:last-child a{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#main-menu li a{
+  font: normal 1.178vw "Segoi UI","Lato","Trebuchet MS", Arial, Helvetica, sans-serif;
+  display: block;
+  background-color: #0f6fb2;
+  background-image: -webkit-linear-gradient(top, rgb(15, 111, 178), rgb(34, 65, 112));
+  box-shadow: inset 0 1px 0 #0081bd,inset 0 2px 0 #0078b0,inset 0 3px 0 #0070a3, 0 0 10px rgba(0,0,0,0.2);
+  box-sizing: border-box;
+  text-decoration: none;
+  color:#FFF;
+  text-align:center;
+  cursor:pointer;
+  padding-top:12px;
+  padding-bottom:0.9em;
+  border-bottom: 1px solid #0e223d;
+  height:4.17vw;
+
+}
+
+
+#main-menu li a:hover{
+    color: #F58220;
+}
+
+
+#main-menu li ul
+{
+list-style-type:none;
+display:none;
+}
+
+/*Sidebar Menu*/
+
+#sidebar-menu li:nth-child(1) ul{
+ display:block;
+}
+
+
+#sidebar-menu{
+  
+   float:left;
+   opacity: 0.95;
+   border-radius: 5px;
+   list-style-type: none;
+   margin-left: 7%;
+   margin-top:3%;
+   padding:0;
+   padding-right: 1%;
+   height: 55px;
+   font-size:1.5em;
+}
+
+#sidebar-menu li a{
+  font: normal 16px/35px "Segoi UI","Lato","Trebuchet MS", Arial, Helvetica, sans-serif;
+  display: block;
+  background-color: #0f6fb2;
+  background-image: -webkit-linear-gradient(top, rgb(15, 111, 178), rgb(34, 65, 112));
+  box-shadow: inset 0 1px 0 #0081bd,inset 0 2px 0 #0078b0,inset 0 3px 0 #0070a3, 0 0 10px rgba(0,0,0,0.2);
+  box-sizing: border-box;
+  text-decoration: none;
+  color:#FFF;
+  font-size:0.87em;
+  text-align:center;
+  cursor:pointer;
+  padding-left:2.7vw;
+  padding-right:2.7vw;
+  border-radius: 5px 5px;
+ 
+  -webkit-transition: all .2s ease-in;
+}
+
+#sidebar-menu li a:hover{
+    color: #F58220;
+}
+
+#sidebar-menu li ul
+{
+list-style-type:none;
+display:none;
+padding:0;
+
+}
+
+#sidebar-menu li ul li a{
+  background: #0f7db2;
+  padding:0;
+  height:30px;
+}
+
+/*PCL Table*/
+tr,td,th{
+padding: 4px 9px;
+border: 1px solid #fff;
+text-align: left;
+font-size:1.2em;
+}
+
+#pcl{
+   
+border-collapse: collapse;
+border-spacing: 0;
+margin-top: 2%;
+
+font-family: Arial, sans-serif;
+font-size: 0.8431em;
+overflow: hidden;
+background: #FFF;
+color: #024457;
+border: 1px solid #167F92; 
+width:66.617vw;
+}
+
+#pcl th{
+border: 1px solid #FFF;
+background-color: #F58220;
+color: #FFF;
+margin:5px;
+padding-left:1px;
+}
+
+th.sorting_asc{
+background-image:url('../img/asc.gif');
+background-repeat:no-repeat;
+background-position: right center;
+}
+
+th.sorting_desc{
+background-image:url('../img/desc.gif');
+background-repeat:no-repeat;
+background-position: right center;
+}
+
+#pcl  tr:nth-child(2n){
+background: rgba(0, 0, 0, 0.105);
+}
+
+#pcl  tr:nth-child(2n+1){
+background: rgba(0, 0, 0, 0.063);
+}
+
+
+
+/*pagination*/
+#pcl_paginate{
+position:absolute;
+right:0;
+margin-top: 3%;
+}
+  
+#pcl_previous,#pcl_next,.paginate_button{
+  border-radius: 3px;
+  padding: 4px 14px;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color: #f5f5f5;
+  border: 1px solid #bbbbbb;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  cursor:pointer;
+} 
+
+div#pcl_length {
+  float: right;
+  margin-top: 30px;
+  margin-right: 0;
+  width: 153px;
+}
+
+label{
+  padding-top: 4%;
+  font-size:16px;
+  height: 45.265625px;
+  margin-bottom: 0px;
+  }
+ 
+#pcl_filter label{
+  width:340px;
+}  
+ 
+#pcl_length label{
+float:left;
+}
+
+div#pcl_wrapper {
+  position: absolute;
+  left: 24%;
+}  
+  
+input{
+  border: 1px solid #ccc;
+}
+
+#pcl_filter input{
+ margin-left:2%;
+}  
+
+.current{
+  background-color: #428bca;
+  color:#f5f5f5;
+ }
+ 
+ /*Css for container*/
+ 
+ #container{
+ position:relative;
+ margin-left: 25%;
+  padding-top:2%;
+  padding-left:2%;
+ }
+ #container div:first-child {
+ position:absolute;
+ max-width:900px;
+ padding-left: 7%;
+ }
+ #container svg {
+ margin-left:-23%;
+ }
+ #drop-down{
+  margin-top:3%;
+  margin-left:14%;
+  padding-left:8%;
+  padding-right:8%;
+  font-size:16px;
+  letter-spacing:2;
+ }
+ 
+ 
+ 
