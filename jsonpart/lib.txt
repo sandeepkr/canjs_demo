@@ -1,0 +1,6 @@
+can.ejs.js
+can.jquery.js
+exporting.js
+highcharts.js
+jquery.dataTables.min.js
+jquery-1.10.1.js
