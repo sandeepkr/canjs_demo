@@ -1,0 +1,17 @@
+{{#if menuitem.length}}
+    {{#each menuitem}}
+	    <li> <a>{{menu}} </a> 
+		  <ul>
+		  {{#if submenu.length}}
+			  {{#each submenu}}
+			      <li><a> {{value}} </a></li>
+			   {{/each}}
+			{{else}}
+				{{emptyMessage}}
+		   {{/if}}
+		 </ul>
+	    </li>
+    {{/each}}
+  {{else}}
+	 {{emptyMessage}}
+  {{/if}}
